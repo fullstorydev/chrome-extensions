@@ -11,14 +11,14 @@
   "default_host_settings": {
     "paths": [
       { "host_prefix": "app.", "path_prefix": "/s/" },
-      { "host_prefix": "edge.", "path_prefix": "/s/" },
+      { "host_prefix": "edge.", "path_prefix": "/s/", "exclude": "/s/settings/" },
       { "host_prefix": "play.", "path_prefix": "/s/" },
-      { "host_prefix": "webber.internal.", "path_prefix": "/admin/s/" },
       { "host_prefix": "app.", "path_prefix": "/wfs/" },
       { "host_prefix": "edge.", "path_prefix": "/wfs/" },
       { "host_prefix": "play.", "path_prefix": "/wfs/" },
-      { "host_prefix": "solrman.", "path_prefix": "/v2/s/", "previewer_prefix": "/solrman" },
-      { "host_prefix": "eunoe.", "path_prefix": "/v2/s/", "previewer_prefix": "/eunoe"}
+      { "host_prefix": "webber.internal.", "path_prefix": "/admin/s/" },
+      { "host_prefix": "solrman.internal.", "path_prefix": "/v2/s/", "previewer_prefix": "/solrman" },
+      { "host_prefix": "eunoe.internal.", "path_prefix": "/v2/s/", "previewer_prefix": "/eunoe" }
     ],
     "headers": [
       ### Don't spam our prod CSP endpoints with scriptswap garbage
